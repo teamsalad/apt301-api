@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "301-api"
+name = "apt301-api"
 version = "0.0.1"
 description = "API server for Apt. 301"
 authors = ["RobinRheem <robin.rheem@gmail.com>"]
