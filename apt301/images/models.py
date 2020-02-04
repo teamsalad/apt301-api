@@ -6,12 +6,12 @@ from django.utils.translation import gettext as _
 
 def storage_path(instance, filename):
     """
-    TODO: Implement storage path function
-    :param instance:
-    :param filename:
-    :return:
+    Staging path with unique filename
+    :param instance: image instance
+    :param filename: original filename
+    :return: storage path
     """
-    pass
+    return f'staging/{instance.name}'
 
 
 class Image(models.Model):
@@ -24,8 +24,8 @@ class Image(models.Model):
         (SAVED, _('Image is uploaded and associated with another resource')),
     )
 
-    resource_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    resource_id = models.PositiveIntegerField()
+    resource_type = models.ForeignKey(ContentType, null=True, on_delete=models.SET_NULL)
+    resource_id = models.PositiveIntegerField(null=True)
     resource = GenericForeignKey('resource_type', 'resource_id')
     image = models.ImageField(upload_to=storage_path)
     name = models.CharField(max_length=100)
