@@ -222,6 +222,14 @@ setuptools = ">=36"
 testing = ["coverage", "pyyaml"]
 
 [[package]]
+category = "main"
+description = "A tiny, secure, URL-friendly, unique string ID generator for Python"
+name = "nanoid"
+optional = false
+python-versions = "*"
+version = "2.0.0"
+
+[[package]]
 category = "dev"
 description = "A Python Parser"
 name = "parso"
@@ -372,7 +380,7 @@ python-versions = "*"
 version = "0.1.8"
 
 [metadata]
-content-hash = "22f9230f15dec0908b2b7dec8c1be4ca181553df867824b5719defb7503de440"
+content-hash = "58ea9442b384d53d108a07cad720bab642c469f99bf2502687704c836f23735f"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -448,6 +456,10 @@ jmespath = [
 markdown = [
     {file = "Markdown-3.1.1-py2.py3-none-any.whl", hash = "sha256:56a46ac655704b91e5b7e6326ce43d5ef72411376588afa1dd90e881b83c7e8c"},
     {file = "Markdown-3.1.1.tar.gz", hash = "sha256:2e50876bcdd74517e7b71f3e7a76102050edec255b3983403f1a63e7c8a41e7a"},
+]
+nanoid = [
+    {file = "nanoid-2.0.0-py3-none-any.whl", hash = "sha256:90aefa650e328cffb0893bbd4c236cfd44c48bc1f2d0b525ecc53c3187b653bb"},
+    {file = "nanoid-2.0.0.tar.gz", hash = "sha256:5a80cad5e9c6e9ae3a41fa2fb34ae189f7cb420b2a5d8f82bd9d23466e4efa68"},
 ]
 parso = [
     {file = "parso-0.6.0-py2.py3-none-any.whl", hash = "sha256:1376bdc8cb81377ca481976933773295218a2df47d3e1182ba76d372b1acb128"},
